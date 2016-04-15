@@ -57,15 +57,16 @@ public class Controlador_VentanaArticulo implements ActionListener{
     public void buscar()
     {
         if(metodoArticulo.consultarArticulo(frm_Ventana.devolverCodigo()))
-            {
-                frm_Ventana.mostrarInformacion(metodoArticulo.getArregloInformacion());
-                frm_Ventana.habilitarEdicion();
-            }
-            else
-            {
-                frm_Ventana.mostrarMensaje("La articulo buscada no se encuentra.");
-                frm_Ventana.habilitarAgregar();
-            }
+        {
+            frm_Ventana.mostrarInformacion(metodoArticulo.getArregloInformacion());
+            frm_Ventana.habilitarEdicion();
+        }
+        else
+        {
+            frm_Ventana.mostrarMensaje("La articulo buscada no se encuentra.");
+            frm_Ventana.habilitarAgregar();
+        }
+        
     }
     public void buscarArticulo()
     {
