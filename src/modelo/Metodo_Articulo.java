@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  * @author 3rika
  */
 public class Metodo_Articulo {
+
     private ArrayList <Articulo> arrayArticulo;
     String arregloInformacionConsultada[] = new String[2];
     
@@ -41,13 +42,12 @@ public class Metodo_Articulo {
     {
         boolean existe = false;
         
-        for(int contador = 0; contador<arrayArticulo.size(); contador++)
+        for(int contador = 0; contador< arrayArticulo.size(); contador++)
         {
             if(arrayArticulo.get(contador).getCodigo().equals(codigo))
             {
                 arregloInformacionConsultada[0] = arrayArticulo.get(contador).getArticulo();
                 arregloInformacionConsultada[1] = ""+arrayArticulo.get(contador).getCantidad();
-                existe = true;
             }
         }
         return existe;

@@ -63,10 +63,9 @@ public class Controlador_VentanaArticulo implements ActionListener{
         }
         else
         {
-            frm_Ventana.mostrarMensaje("La articulo buscada no se encuentra.");
+            frm_Ventana.mostrarMensaje("El articulo buscada no se encuentra.");
             frm_Ventana.habilitarAgregar();
         }
-        
     }
     public void buscarArticulo()
     {

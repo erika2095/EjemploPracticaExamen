@@ -32,7 +32,7 @@ public class Panel_Botones extends javax.swing.JPanel {
         this.btn_BusquedaGeneral.addActionListener(controladorVentana);
     }
     
-    public void habilitarBuscar()
+    public void habilitarBuscar() // habilitarAgregar
     {
         this.btn_Agregar.setEnabled(true);
     }
